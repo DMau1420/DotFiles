@@ -1,0 +1,111 @@
+@import "colors.css";
+
+/*configuracion general*/
+* {
+	border: none;
+    	border-radius: 0;  
+    	font-family: "FiraCode Nerd Font", "sans-serif";
+    	font-size: 13px;
+    	min-height: 0;
+}
+
+window#waybar {
+	background: transparent;
+	color: white;
+}
+
+#custom-launcher, #workspaces, #custom-mediaplayer, #custom-previous, 
+#custom-reproducir, #custom-next, #backlight, #wireplumber, 
+#tray, #cpu, #memory, #battery, #clock {
+	background-color: @obsidian-bg;
+	margin: 3px 3px;
+	padding: 0 8px;
+	border-radius: 10px;
+	border: 1px solid @cristal-border;
+}
+
+tooltip {
+	background: @obsidian-tooltip;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 8px;
+}
+
+tooltip label{
+	color: @lila-acheron;
+}
+
+#workspaces button {
+	background: transparent;
+	color: @aqua-aventurine;
+	padding: 0 6px;
+}
+
+#workspaces button.active {
+	color: @cherry-blossom;
+	background-color: @ocean-ruan;
+	border-radius: 8px;
+}
+
+#custom-launcher {
+	font-size: 14px;
+	color: @purple-castorice;
+}
+
+#clock {
+    color: @rosa-changli;
+    font-weight: bold;
+}
+
+#battery.charging, #battery.plugged {
+    color: @menta-anaxa;
+}
+
+#battery.warning:not(.charging) {
+    color: @vanillla-warning;
+}
+
+#battery.critical:not(.charging) {
+    color: @coral-critical;
+}
+
+#custom-mediaplayer { 
+    margin-right: 0; 
+    border-radius: 10px 0 0 10px; 
+    color: @azul-galbrena;
+}
+#custom-previous { 
+    margin-left: 0; margin-right: 0; border-radius: 0; padding: 0 5px; 
+}
+#custom-reproducir { 
+    margin-left: 0; margin-right: 0; border-radius: 0; padding: 0 5px; 
+}
+#custom-next { 
+    margin-left: 0; border-radius: 0 10px 10px 0; padding: 0 10px 0 5px; 
+}
+
+#custom-reproducir.Playing { color: @menta-anaxa; }
+#custom-reproducir.Paused { color: @vanilla-warning; }
+
+#cpu { color: @lila-acheron; }
+#memory { color: @lila-memory; }
+#wireplumber { color: @jade-qiuyuan; }
+#backlight { color: @oro-aventurine; }
+
+/* Estilo para el menú que sale del XML */
+menu {
+    background: @obsidian-menu; /* El mismo color de tus islas */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 8px;
+}
+
+menu item {
+    color: @nieve-texto;
+    transition: all 0.2s ease;
+    border-radius: 8px;
+}
+
+menu item:hover {
+    background: @cherry-blossom; /* El rosa de tu workspace activo */
+    color: #11111b;
+}

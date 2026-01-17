@@ -1,0 +1,111 @@
+@import "colors.css";
+
+/*configuracion general*/
+* {
+	border: none;
+    	border-radius: 0;  
+    	font-family: "FiraCode Nerd Font", "sans-serif";
+    	font-size: 13px;
+    	min-height: 0;
+}
+
+window#waybar {
+	background: transparent;
+	color: white;
+}
+
+#custom-launcher, #workspaces, #custom-mediaplayer, #custom-previous, 
+#custom-reproducir, #custom-next, #backlight, #wireplumber, 
+#tray, #cpu, #memory, #battery, #clock {
+	background-color: rgba(30, 30, 46, 0.85);
+	margin: 3px 3px;
+	padding: 0 8px;
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+tooltip {
+	background: rgba(30, 30, 46, 0.6);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 8px;
+}
+
+tooltip label{
+	color: #89dceb;
+}
+
+#workspaces button {
+	background: transparent;
+	color: #B5E8E0;
+	padding: 0 6px;
+}
+
+#workspaces button.active {
+	color: #fa89ce;
+	background-color: rgba(47, 112, 133, 0.5);
+	border-radius: 8px;
+}
+
+#custom-launcher {
+	font-size: 14px;
+	color: #ac38e2
+}
+
+#clock {
+    color: #fab387;
+    font-weight: bold;
+}
+
+#battery.charging, #battery.plugged {
+    color: #a6e3a1;
+}
+
+#battery.warning:not(.charging) {
+    color: #f9e2af;
+}
+
+#battery.critical:not(.charging) {
+    color: #f38ba8;
+}
+
+#custom-mediaplayer { 
+    margin-right: 0; 
+    border-radius: 10px 0 0 10px; 
+    color: #4086d5;
+}
+#custom-previous { 
+    margin-left: 0; margin-right: 0; border-radius: 0; padding: 0 5px; 
+}
+#custom-reproducir { 
+    margin-left: 0; margin-right: 0; border-radius: 0; padding: 0 5px; 
+}
+#custom-next { 
+    margin-left: 0; border-radius: 0 10px 10px 0; padding: 0 10px 0 5px; 
+}
+
+#custom-reproducir.Playing { color: #a6e3a1; }
+#custom-reproducir.Paused { color: #f9e2af; }
+
+#cpu { color: #90dceb; }
+#memory { color: #cba6f7; }
+#wireplumber { color: #00BB77 }
+#backlight { color: #FCCD12 }
+
+/* Estilo para el menú que sale del XML */
+menu {
+    background: rgba(30, 30, 46, 0.95); /* El mismo color de tus islas */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 8px;
+}
+
+menu item {
+    color: #cdd6f4;
+    transition: all 0.2s ease;
+    border-radius: 8px;
+}
+
+menu item:hover {
+    background: #fa89ce; /* El rosa de tu workspace activo */
+    color: #11111b;
+}

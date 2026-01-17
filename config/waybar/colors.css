@@ -1,0 +1,28 @@
+/* Paleta Maulinux - Single Source of Truth */
+
+/* Fondos y Estructura */
+@define-color obsidian-bg      rgba(30, 30, 46, 0.85); /* Fondo de las islas */
+@define-color obsidian-menu    rgba(30, 30, 46, 0.95); /* Fondo del menú XML */
+@define-color obsidian-tooltip rgba(30, 30, 46, 0.6);  /* Fondo de tooltips */
+@define-color cristal-border   rgba(255, 255, 255, 0.1);/* Bordes finos */
+
+/* Colores de Marca y UI */
+@define-color purple-castorice  #d05bf7;
+@define-color cherry-blossom    #ff92c4;
+@define-color jade-qiuyuan      #00BB77;
+@define-color rosa-changli      #fca29a;
+@define-color lila-acheron      #8c8bc2;
+@define-color menta-anaxa       #8bd5a0;
+
+/* Estados y Sensores */
+@define-color azul-galbrena     #4086d5;  /* Mediaplayer título */
+@define-color lila-memory       #cba6f7;  /* Módulo de Memoria */
+@define-color oro-aventurine    #fdef70;  /* Brillo de pantalla */
+@define-color aqua-aventurine   #3fbbc3;  /* Workspaces inactivos */
+@define-color vainilla-warning  #f9e2af;  /* Batería baja / Pausa */
+@define-color coral-critical    #f38ba8;  /* Batería crítica */
+@define-color nieve-texto       #cdd6f4;  /* Texto general de menú */
+
+/* Extras */
+@define-color dark-hover        #11111b;  /* Texto oscuro sobre fondo rosa */
+@define-color ocean-ruan      rgba(30, 112, 133, 0.5); /* Fondo workspace activo */
