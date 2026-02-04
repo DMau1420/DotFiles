@@ -1,0 +1,15 @@
+/* Redondear las portadas de los álbumes */
+.main-entityHeader-image, .main-image-image {
+    border-radius: 12px !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+/* Cambiar la fuente si tienes alguna instalada en Arch */
+body {
+    font-family: Adawaita Sans;
+}
+
+/* Quitar la publicidad o botones innecesarios si quieres */
+.main-topBar-upgradeButton {
+    display: none !important;
+}
