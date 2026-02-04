@@ -1,6 +1,6 @@
 # Hola
 ## Antes de instalar
-es necesario tener instalado hyprland, git y preferiblemente algun navegador como firefox
+Es necesario tener instalado hyprland, git y preferiblemente algun navegador como firefox
 ```
 sudo pacman -S git firefox
 ```
